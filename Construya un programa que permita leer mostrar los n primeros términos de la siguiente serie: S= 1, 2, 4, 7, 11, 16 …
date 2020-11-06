@@ -1,0 +1,20 @@
+/*
+Construya un programa que permita leer 
+mostrar los n primeros términos de la siguiente serie:
+S= 1, 2, 4, 7, 11, 16 …
+ */
+
+import javax.swing.*;
+public class pregunta_a1 {
+
+    public static void main(String[] args) {
+        int n,acu;
+        acu=1;
+        n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el termino enesimo: "));
+        for (int i = 0; i < n; i++) {
+            acu=acu+i;
+            System.out.println(acu);
+        }
+        
+    }
+}

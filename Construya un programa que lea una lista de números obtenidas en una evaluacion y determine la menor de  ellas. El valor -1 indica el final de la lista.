@@ -1,0 +1,17 @@
+import javax.swing.*;
+public class lista_detener {
+    public static void main(String[] args) {
+        double num,min;
+        min=21;
+        num=Double.parseDouble(JOptionPane.showInputDialog("Ingrese los numeros"));
+        while (num!=-1) {            
+            if (num>=0 && num<=20) {
+                if (num<min) {
+                    min=num;
+                }
+            }
+            nota=Double.parseDouble(JOptionPane.showInputDialog("Ingrese los numeros"));
+        }
+        JOptionPane.showMessageDialog(null, "La nota minima es: "+min);
+    } 
+}

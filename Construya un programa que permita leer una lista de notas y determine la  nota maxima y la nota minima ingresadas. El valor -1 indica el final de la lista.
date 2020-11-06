@@ -1,0 +1,27 @@
+/* Construya un programa que permita leer una lista de notas y determine la 
+nota maxima y la nota minima ingresadas. El valor -1 indica el final de la lista.
+Por ejemplo, Si los valores ingresados son: 11, 15, 08, 12, 19 y -1 
+Entonces mostrar: nota_máxima= 19 y nota_mínima=08
+ */
+
+import javax.swing.*;
+public class pregunta_b {
+
+    public static void main(String[] args) {
+        double nota,min,max;
+        nota=Double.parseDouble(JOptionPane.showInputDialog("Ingrese las notas"));
+        min=nota;
+        max=nota;
+        while (nota!=-1) {            
+            if (nota>min && nota>max) {
+                max=nota;
+            }
+            if (nota<min && nota<max) {
+                min=nota;    
+            }
+            nota=Double.parseDouble(JOptionPane.showInputDialog("Ingrese las notas"));
+        }
+        JOptionPane.showMessageDialog(null, "La nota minima es: "+min);
+        JOptionPane.showMessageDialog(null, "La nota maxima es: "+max);    
+    }
+}

@@ -1,0 +1,15 @@
+
+
+import javax.swing.*;
+public class factorial_n {
+    public static void main(String[] args) {
+    int n,fact;
+    fact=1;
+    n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de n: ")); 
+        for (int i = 1; i <=n; i++) {
+            fact=fact*i;
+        }
+        JOptionPane.showMessageDialog(null, "El factoria de n es: "+fact);
+    }
+    
+}

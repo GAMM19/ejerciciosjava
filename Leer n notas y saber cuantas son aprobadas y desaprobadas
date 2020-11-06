@@ -1,0 +1,26 @@
+/*
+Programa que permita leer n notas y calcular
+cuantas son aprobadas y cuanta son desaprobadas
+ */
+
+import javax.swing.*;
+public class nnotas_apro_desap {
+    public static void main(String[] args){
+     int n,apro,desap;  
+     apro=0;
+     desap=0;
+     double nota;
+     n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de notas: "));
+        for (int i = 1; i <= n; i++) {
+            nota=Double.parseDouble(JOptionPane.showInputDialog("Ingrese la nota "+i+" :"));
+            if (nota>=10.5) {
+                apro++;
+            }
+            else{
+                desap++;
+            }
+        }
+        JOptionPane.showMessageDialog(null,"La cantidad de notas aprobadas son: "+apro);
+        JOptionPane.showMessageDialog(null,"La cantidad de notas desaprobadas son: "+desap);        
+    }    
+}

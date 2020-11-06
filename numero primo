@@ -1,0 +1,20 @@
+import javax.swing.*;
+public class n_primo {
+
+    public static void main(String[] args) {
+        int n,div;
+        div=0;
+        n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su numero: "));
+        for (int i = 1; i <= n; i++) {
+            if (n%i==0) {
+                div++;
+            }
+        }
+        if (div==2) {
+            JOptionPane.showMessageDialog(null, "El numero es primo"); 
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "El numero no es primo");
+        }
+    } 
+}

@@ -1,0 +1,16 @@
+import javax.swing.*;
+public class pregunta_a {
+
+    public static void main(String[] args) {
+        int n,i,lim;
+        n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de n: "));
+        i=0;
+        lim=1;
+        while (i<n) {            
+            lim=lim+i;
+            i++;
+            System.out.println(lim);
+            //JOptionPane.showMessageDialog(null, "El termino enesimo es: "+lim);
+        }   
+    }
+}
